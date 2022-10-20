@@ -20,12 +20,12 @@ export const GameBuy = ({ game }) => {
 
   return (
     <div className="game-buy">
-      <span className="game-buy__price">{game.price} руб.</span>
+      <span className="game-buy__price">{game.price} грн.</span>
       <Button
         type={isItemInCart ? "secondary" : "primary" }
         onClick={handleClick}
       >
-        {isItemInCart ? "Убрать из корзины" : "В Корзину"}
+        {isItemInCart ? "Прибрати з кошика" : "У кошик"}
       </Button>
     </div>
   );
